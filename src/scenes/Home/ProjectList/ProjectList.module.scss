@@ -1,0 +1,226 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.btnCarousel {
+    position: fixed;
+    bottom: 1rem;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    line-height: 0;
+    background: var(--backdrop);
+    border: none;
+    border-radius: 50%;
+    color: var(--color-white);
+    cursor: pointer;
+    z-index: 5;
+    transition: all 0.3s ease;
+
+    &>svg {
+        vertical-align: middle;
+    }
+    &.btnCarouselLeft {
+        left: calc(50% - 50px);
+    }
+    &.btnCarouselRight {
+        right: calc(50% - 50px);
+    }
+}
+
+.dotContainer {
+    margin-top: 1rem;
+}
+
+.dotCarousel {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    border: 0px;
+    background-color: var(--bg-secondary);
+    margin-right: .5rem;
+    z-index: 4;
+
+    &.dotActive {
+        background-color: var(--bg-primary);
+    }
+}
+
+.itemProject {
+    background-color: var(--bg-primary);
+    border-radius: .5rem;
+    color: var(--color-white);
+    cursor: pointer;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    transition: all .3s ease;
+    width: 270px;
+    height: 350px;
+    user-select: none;
+
+    &:hover {
+        box-shadow: 0 0 10px var(--shadow-card);
+    }
+}
+
+.itemProjectImg {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+
+    &>span,
+    img {
+        border-radius: .5rem;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+    &:hover .itemProjectHover {
+        opacity: 1;
+    }
+}
+
+.itemProjectLink {
+    background-color: var(--bg-link);
+    width: 50px;
+    height: 50px;
+    margin: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.itemProjectHover,
+.itemProjectLink {
+    transition: all .5s ease;
+    &>svg {
+        color: var(--color-white);
+        height: 50%;
+        width: 50%;
+    }
+}
+
+.itemProjectHover {
+    border-radius: .5rem;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background-color: var(--bg-hover);
+}
+
+.itemProjectContent {
+    flex-direction: column;
+    padding: .5rem;
+    position: relative;
+    width: 100%;
+}
+
+.contentProjectTitle {
+    position: absolute;
+    bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: .5rem 1rem 0;
+    background-color: var(--bg-primary);
+}
+
+.itemProjectTitle {
+    line-height: 1.5;
+    
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.itemProjectText {
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+    color: var(--caption-card);
+    font-size: .8rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: .5rem;
+}
+
+.contentTags {
+    display: inline-flex;
+    gap: .7rem;
+    width: 100%;
+    overflow-x: auto;
+    padding: .7rem .5rem;
+
+    ul {
+        list-style: none;
+    }
+
+    .itemProjectTag {
+        font-size: .875rem;
+        line-height: 1.25rem;
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        border-radius: .5rem;
+        border: 1px solid #fff;
+    }
+}
+
+.title {
+    font-size: 2.6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+@media(max-width: 591px){
+    .btnCarousel {
+        font-size: 1.6rem;
+        
+        &.btnCarouselLeft {
+            left: calc(50% - 45px);
+        }
+        &.btnCarouselRight {
+            right: calc(50% - 45px);
+        }
+    }
+}
+@media(max-width: 320px){
+    .itemProject {
+        margin: 1rem;
+        width: 180px;
+        height: 245px;
+    }
+    .itemProjectImg {
+        height: 150px;
+    }
+}
+@media(pointer: coarse){
+    .itemProjectImg .itemProjectHover {
+        opacity: 1;
+    }
+}

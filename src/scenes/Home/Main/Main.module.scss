@@ -1,0 +1,95 @@
+@import '../../../styles/keyframes';
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--toggle-theme);
+  text-align: left;
+}
+
+.title {
+  padding-left: .2rem;
+  font-size: 2.4rem;
+}
+
+.mainTitle {
+  font-size: 2.5rem;
+  word-spacing: .3rem;
+}
+
+.mainName {
+  color: var(--txt-secondary);
+  text-transform: uppercase;
+
+}
+
+.typewriterWrapper {
+  font-size: 2.2em;
+  color: #be6adf;
+  font-weight: 600;
+}
+
+.wave {
+  animation-name: wave;
+  animation-duration: 2.1s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+.typewriterCursor {
+  font-size: 2.4em;
+  color: #b562d6;
+}
+
+.homeHeader {
+  width: 58.33333333%;
+}
+
+.codingMainIcon {
+  display: flex !important;
+  width: 41.66666667%;
+  min-height: 25rem;
+  padding: 0 1rem;
+}
+
+
+@media (max-width: 991px) {
+  .content {
+    flex-wrap: wrap;
+  }
+
+  .homeHeader {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .codingMainIcon {
+    justify-content: center;
+    width: 70%;
+  }
+}
+
+@media(max-width: 440px){
+  .codingMainIcon {
+    width: 100%;
+  }
+}
+@media(max-width: 590px){
+  .title {
+    font-size: 1.7rem;
+  }
+  
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+
+  .typewriterWrapper {
+    font-size: 1.5em;
+  }
+  
+  .typewriterCursor {
+    font-size: 1.7em;
+  }
+}

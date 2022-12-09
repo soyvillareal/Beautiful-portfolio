@@ -1,0 +1,90 @@
+:root {
+  --font-base: "Raleway", sans-serif;
+  --color-white: #fff;
+}
+
+html {
+  --txt-primary: #cd5ff8;
+  --txt-secondary: #cd5ff8;
+  --bg: #623686;
+  --bg-active: rgba(109, 32, 197, .84);
+  --bg-footer: #ebebeb;
+  --backdrop: rgba(0, 0, 0, 0.65);
+  --border-primary: #8a49a8;
+  --social-shadow: #801f95;
+  --preloader: #fafafa;
+  --coding-two: #6e6e6e;
+  --coding-three: #212c30;
+  --computer-screen: #5a727e;
+  --cpu: #e3e4e5;
+
+  
+  --bg-layout-home: linear-gradient(307deg, transparent 0%, transparent 57%, #ffffff 57%, #f8f8f8 100%), linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+  --bg-layout-base: linear-gradient(307deg, transparent 0%, transparent 57%, #ffffff 57%, #f8f8f8 100%), linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+
+
+  --toggle-theme: #000;
+  --toggle-color: #fff;
+  --bg-primary: #8a49a8;
+  --bg-secondary: #c95bf5;
+  --caption-card: #eee;
+  --shadow-card: rgb(0, 0, 0, .6);
+  --bg-hover: rgba(0, 0, 0, .3);
+  --bg-link: rgba(0, 0, 0, .5);
+
+  
+  --astronaut-paper-one: #8a49a8;
+  --astronaut-glass: #623686;
+  --astronaut-outfit: #c95bf5;
+  --astronaut-bag: #bf3bf3;
+
+  --star-color: #bf3bf3;
+  --asteroid-color: #623686;
+
+
+  --bg-scroll: #623686;
+  --bg-scroll-thumb: rgba(178, 121, 216, 0.959);
+  --bg-scroll-thumb-hover: rgba(178, 121, 216, 0.711);
+}
+
+html[dark=true] {
+  --txt-primary: #cd5ff8;
+  --txt-secondary: #cd5ff8;
+  --bg: #623686;
+  --bg-active: rgba(109, 32, 197, .84);
+  --bg-footer: #0a0416;
+  --backdrop: rgba(0, 0, 0, 0.75);
+  --border-primary: #8a49a8;
+  --social-shadow: #801f95;
+  --preloader: #0c0513;
+  --coding-two: #e0e0e0;
+  --coding-three: #263238;
+  --computer-screen: #263238;
+  --cpu: #f8f8f8;
+
+
+  --bg-layout-home: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  --bg-layout-base: #100D19;
+
+  --toggle-theme: #fff;
+  --toggle-color: #000;
+  --bg-primary: #8a49a8;
+  --bg-secondary: #dfa8f5;
+  --caption-card: #aaa;
+  --shadow-card: rgb(0, 0, 0, .6);
+  --bg-hover: rgba(0, 0, 0, .4);
+  --bg-link: rgba(0, 0, 0, .6);
+
+  --astronaut-paper-one: #cd5ff8;
+  --astronaut-glass: #8a49a8;
+  --astronaut-outfit: #dfa8f5;
+  --astronaut-bag: #d078f3;
+
+  
+  --star-color: #d078f3;
+  --asteroid-color: #8a49a8;
+
+  --bg-scroll: #2d1950;
+  --bg-scroll-thumb: rgba(178, 121, 216, 0.959);
+  --bg-scroll-thumb-hover: rgba(178, 121, 216, 0.711);
+}

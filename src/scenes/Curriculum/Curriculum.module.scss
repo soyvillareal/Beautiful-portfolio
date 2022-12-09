@@ -1,0 +1,28 @@
+.content {
+  padding: 9rem 9rem 3rem;
+  z-index: 4;
+}
+
+.pdfWrapper {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.downloadText {
+  margin-left: 8px;
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 600px) {
+  .pdfWrapper {
+    width: 100%;
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .content {
+    padding: 9rem 1rem 1rem;
+  }
+}

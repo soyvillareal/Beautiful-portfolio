@@ -1,0 +1,89 @@
+.containerNavigation {
+  display: flex;
+  gap: 0.8rem;
+  background: var(--backdrop);
+  width: max-content;
+  padding: 0.7rem 1.2rem;
+  z-index: 8;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+  transition: all 0.3s ease;
+
+  .contentNavigation {
+    display: flex;
+    gap: 0.8rem;
+  }
+}
+
+.navButton {
+  background: transparent;
+  padding: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-white);
+  font-size: 1.1rem;
+
+  &.navLink {
+    width: 2.7rem;
+    height: 2.7rem;
+    padding: 0;
+  }
+}
+
+.navButton:hover {
+  background: var(--bg-active);
+}
+
+.navButtonActive {
+  background: var(--bg-active);
+}
+
+.changeNav {
+  position: fixed;
+  bottom: 1rem;
+  background: var(--backdrop);
+  right: calc(50% - 110px);
+  z-index: 8;
+  transition: all 0.3s ease;
+}
+
+.showBtnChange .changeNav {
+  right: calc(50% - 361px/1.7);
+  transform: translateX(50%);
+  bottom: 1.6rem;
+}
+
+body:not(.showNavChange, .showBtnChange) .changeNav {
+  bottom: -100px;
+}
+
+body.showNavChange .containerNavigation {
+  bottom: -100px;
+}
+
+@media(max-width: 591px) {
+  .navButton {
+    font-size: 1.6rem;
+    right: calc(50% - 100px);
+
+    &.navLink {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  }
+  .showBtnChange .changeNav {
+    right: calc(50% - 307px/1.7);
+    transform: translateX(50%);
+    bottom: 1.6rem;
+  }
+}
+@media(max-width: 425px) {
+  .showBtnChange .changeNav {
+    right: calc(50% - 237px/1.65);
+    bottom: 1.3rem;
+  }
+}

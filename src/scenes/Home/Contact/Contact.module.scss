@@ -1,0 +1,80 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 350px;
+  }
+}
+
+.title {
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.subTitle {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contactLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-right: 3rem;
+}
+
+.devIcons {
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+}
+
+.softwareSkillInline {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  .JQuery>svg>path {
+    fill: #0868ac;
+  }
+
+  .PHP>svg>path {
+    fill: #7377ad;
+  }
+}
+
+.iconSkill {
+  width: 3rem;
+  height: 3rem;
+}
+
+.purple {
+  color: var(--txt-primary);
+}
+
+@media (max-width: 991px) {
+
+  .contactLeft {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .container .content {
+    flex-direction: column;
+    height: 100%;
+  }
+}

@@ -1,0 +1,56 @@
+.illustration {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.fragments {
+    transform-origin: 0 0;
+    animation-name: animfragments;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.asteroids {
+    transform-origin: 0 0;
+    animation-name: animasteroids;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.asteroid {
+    fill: var(--asteroid-color);
+}
+
+
+.stars {
+    transform-origin: 0 0;
+    animation-name: animstars;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.start {
+    fill: var(--star-color);
+}
+
+@keyframes animfragments {
+    from {transform: translate(-200%, 0px);}
+    to {transform: translate(200% , 0px);}
+}
+
+@keyframes animstars {
+    from {transform: translate(-200%, 0px);}
+    to {transform: translate(200% , 0px);}
+}
+
+@keyframes animasteroids {
+    from   {transform: translate(-200%, 15px);}
+    to {transform: translate(200%, 15px);}
+}
