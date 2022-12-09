@@ -46,8 +46,4 @@ npm start
 
 Give a ⭐ if you like this website!
 
-<<<<<<< HEAD
 <span class="badge-paypal"><a href="https://www.paypal.me/SoyVillareal" title="Donate to this project using Paypal" target="_blank"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg?style=for-the-badge&logo=paypal" alt="PayPal donate button" /></a></span>
-=======
-<span class="badge-paypal"><a href="https://www.paypal.me/SoyVillareal" title="Donate to this project using Paypal" target="_blank"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg?style=for-the-badge&logo=paypal" alt="PayPal donate button" /></a></span>
->>>>>>> 898a457174071186b999ad5af269d9809d91d290
