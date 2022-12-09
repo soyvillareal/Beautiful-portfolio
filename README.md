@@ -1,4 +1,4 @@
-# PHP Magazine
+# Beautiful Portfolio
 My personal portfolio <a href="https://soyvillareal.com/" target="_blank">soyvillareal.com</a> which features some of my github projects as well as my resume and technical skills.
 
 ![Demo](https://user-images.githubusercontent.com/32948343/206614022-7fc525af-3091-41ea-9e9a-66d725e44248.jpeg)
