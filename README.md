@@ -39,7 +39,7 @@ npm start
 
 ## Usage Instructions
 
-- Open the project folder and Navigate to `/src/scenes/`. You will find everything you need to customize the website, editing the different components.
+- Open the project folder and navigate to `/src/scenes/`. You will find everything you need to customize the website, editing the different components.
 - Template I used for my abstract [here](https://docs.google.com/document/d/1cW-1K1wPkFu92MdI9p5uFblIGmrTZSzt)
 
 ### Show your support
