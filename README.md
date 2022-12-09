@@ -40,7 +40,7 @@ npm start
 ## Usage Instructions
 
 - Open the project folder and navigate to `/src/scenes/`. You will find everything you need to customize the website, editing the different components.
-- Template I used for my abstract [here](https://docs.google.com/document/d/1cW-1K1wPkFu92MdI9p5uFblIGmrTZSzt)
+- Template I used for my abstract [here](https://docs.google.com/document/d/1cW-1K1wPkFu92MdI9p5uFblIGmrTZSzt). Once you create your resume, locate the `assets` folder in `/src/assets/` there you will find the file `curriculum.pdf`, replace it with the new one.
 
 ### Show your support
 
